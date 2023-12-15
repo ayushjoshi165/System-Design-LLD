@@ -30,9 +30,11 @@ So we changed the design according to Liskov principle and now our code is more 
 
 ### Classese should depend on interface rather than concrete classes 
 
-Wrong Design : !(DependencyInversion.JPG)
+Wrong Design : 
+!(DependencyInversion.JPG)
 
-Right Design : !(DependencyInversionRightDesign.JPG)
+Right Design : 
+!(DependencyInversionRightDesign.JPG)
 
 
 
