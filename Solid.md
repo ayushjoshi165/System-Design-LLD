@@ -30,10 +30,10 @@ So we changed the design according to Liskov principle and now our code is more 
 
 ### Classese should depend on interface rather than concrete classes 
 
-Wrong Design : 
+### Wrong Design : I am creating instance of classes which will give difficulty if there is any update  
 ![image](DependencyInversion.JPG)
 
-Right Design : 
+### Right Design : Now I can modify easilty and can pass any type of keyBoard and Mouse insted of perticular one in the client code
 ![image](DependencyInversionRightDesign.JPG)
 
 
