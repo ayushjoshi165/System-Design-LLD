@@ -5,6 +5,6 @@ Lyman expalnation : When we some functionality in base class which is not used b
 
 ### It is similar to what we have done in dependency inversion example of Mackbook , keyboard and Mouse 
 
-![Example Image](example.jpg)
-![Example Image](example.jpg)
+![StrategyPattern1](StrategyPattern1.png)
+![StrategyPattern2](StrategyPattern2.png)
 
