@@ -36,6 +36,96 @@ So we changed the design according to Liskov principle and now our code is more 
 ### Right Design : Now I can modify easilty and can pass any type of keyBoard and Mouse insted of perticular one in the client code
 ![image](DependencyInversionRightDesign.JPG)
 
+## Example which adhre dependency inversion : 
+
+```
+// Mouse interface
+interface Mouse {
+    void click();
+    void move(int x, int y);
+    // Other mouse-related methods
+}
+
+// Keyboard interface
+interface Keyboard {
+    void type(String keys);
+    // Other keyboard-related methods
+}
+
+// MacBook class depends on Mouse and Keyboard abstractions through constructor injection
+class MacBook {
+    private final Mouse mouse;
+    private final Keyboard keyboard;
+
+    // Constructor with dependencies injected
+    public MacBook(Mouse mouse, Keyboard keyboard) {
+        this.mouse = mouse;
+        this.keyboard = keyboard;
+    }
+
+    // Other MacBook-specific methods or functionalities
+    public void performActions() {
+        mouse.click();
+        mouse.move(100, 200);
+        keyboard.type("Hello, MacBook!");
+    }
+}
+
+// Concrete implementation of a specific Mouse
+class SpecificMouse implements Mouse {
+    @Override
+    public void click() {
+        // Implementation of click() method for SpecificMouse
+        System.out.println("SpecificMouse clicked");
+    }
+
+    @Override
+    public void move(int x, int y) {
+        // Implementation of move() method for SpecificMouse
+        System.out.println("SpecificMouse moved to (" + x + ", " + y + ")");
+    }
+    // Other specific mouse-related methods
+}
+
+// Concrete implementation of a specific Keyboard
+class SpecificKeyboard implements Keyboard {
+    @Override
+    public void type(String keys) {
+        // Implementation of type() method for SpecificKeyboard
+        System.out.println("Typed with SpecificKeyboard: " + keys);
+    }
+    // Other specific keyboard-related methods
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Create instances of specific implementations
+        Mouse specificMouse = new SpecificMouse();
+        Keyboard specificKeyboard = new SpecificKeyboard();
+
+        // Create MacBook instance injecting specific implementations
+        MacBook myMacBook = new MacBook(specificMouse, specificKeyboard);
+
+        // Use MacBook to perform actions
+        myMacBook.performActions();
+    }
+}
+
+
+```
+
+## Note : I am passing the concrete clsses like specificMouse and specificKeyboard here which implemets MOuse and Keyboard interfaces respecively , because I can only create object of concrete calsses that implements the interfaces my constructor looks like 
+
+```
+   // Constructor with dependencies injected
+    public MacBook(Mouse mouse, Keyboard keyboard) {
+        this.mouse = mouse;
+        this.keyboard = keyboard;
+    }
+```
+
+here the Mouse and KeyBoard are interfaces so I will pass the object of concrete clsees who implements these interfaces hence now my Macbook calss is dependent on abstraction instead of the concrete clasees 
+
 
 
 
