@@ -11,3 +11,6 @@ Hamdler | linkToNextHandler --> Handler | linkk to next Handler ......
 So at each handle the handler wil check that can it process the request if yes then process if not the pass to next handler 
 
 like 2000R request came from dricer code , it will pass to 2000Rs NOte handle and check if it can complete, other iwrse pass to 500 rs Handler and so on so forth
+
+![Chain Of responsibility ](chainOfResponsibility.png)
+
