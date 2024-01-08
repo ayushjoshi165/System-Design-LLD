@@ -6,4 +6,7 @@ so instead of applying check everwhere better we should return nullObject by def
 
 ![NULL DP](nullDP1.png)
 ![NULL DP](nullDP2.png)
+![NULL Object Class](Null Object Class.png)
+
+
 
