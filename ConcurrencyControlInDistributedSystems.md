@@ -27,7 +27,9 @@ if the are successfull then it will commit and then End the transaction other wi
 
 Example :  sending money from one bank to another
 
-There are diffrent approaches to achieve concurency and level of concurrenty you need to achieve , look table below 
+There are diffrent approaches to achieve concurency and level of concurrenty you need to achieve , look table below : 
+
+![Isolation Level ](IsolationLevelandStrategy.png)
 
 
  
