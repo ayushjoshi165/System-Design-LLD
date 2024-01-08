@@ -12,7 +12,8 @@ both the concurrency control can be understood bases on the level of Isolation w
 to understand isolation we need to understand som common term like
 
 #### Dirty Read- where 2 threads are reading the same data but get diffrent result because it is bieng writter by some thread and we didnt put any lock on it and it is not yet commited.
-
+#### Non repeatable Read Problem : 
+#### Phantom Read Problem : 
 
 ###what is lock and commit ?
  for this we need to undersatnd the there are 2 types of locks 
