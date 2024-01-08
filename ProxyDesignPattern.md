@@ -9,6 +9,6 @@ we can use it for logging, event handles , sometimew we need to publish event if
 
 ## Note : Spring boot also create proxy of the bean when we create a bean
 
-![Proxy DP](proxyDP.png)
+![Proxy DP](ProxyDP.png)
 
 
