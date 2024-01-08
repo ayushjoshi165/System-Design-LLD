@@ -11,11 +11,11 @@ to solve this problem we need to undersaten the OPTIMISTIC CONCURRENCY CONTROL  
 both the concurrency control can be understood bases on the level of Isolation we need, which are
 to understand isolation we need to understand som common term like
 
-#### Dirty Read- where 2 threads are reading the same data but get diffrent result because it is bieng writter by some thread and we didnt put any lock on it and it is not yet commited.
+#### Dirty Read problem- where 2 threads are reading the same data but get diffrent result because it is bieng writter by some thread and we didnt put any lock on it and it is not yet commited.
 #### Non repeatable Read Problem : 
 #### Phantom Read Problem : 
 
-###what is lock and commit ?
+### what is DB lock and commit ?
  for this we need to undersatnd the there are 2 types of locks 
 #### 1. Sharable Locking : can be shared by multiple threads but only one can write rest can only read 
 #### 2. Exclusive Lock : no other thread can read or write
