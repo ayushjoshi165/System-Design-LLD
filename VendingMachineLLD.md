@@ -5,9 +5,11 @@
 We simple create an interface with all the required fnctionality and then we create seperate concrete calss for each of the state and only implement the required functionality 
 
 
-![STate pattern in code ](VendingMachineLLD1.png)
+![STate pattern in code ](VendingMachineLLLD.png)
 
-![STate pattern in code ](VendingMachineLLD2.png)
+![STate pattern in code ](VendingMachineLLLD2.png)
+
+![Vending Machine UML ](vendingMachineUML.png)
 
 
 
