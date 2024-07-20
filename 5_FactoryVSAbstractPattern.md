@@ -162,6 +162,7 @@ public class MotorcycleFactory implements VehicleFactory {
 }
 ```
 5. Client Usage: Use the factories in client code to create and use objects.
+
 ```
 public class Main {
     public static void main(String[] args) {
@@ -262,7 +263,9 @@ public class Motorcycle implements Vehicle {
     }
 }
 ```
+
 3. Factory Class: Create a factory class that encapsulates the object creation logic.
+
 ```
 public class VehicleFactory {
     public static Vehicle createVehicle(String type) {
@@ -275,8 +278,11 @@ public class VehicleFactory {
         }
     }
 }
+
 ```
+
 4. Client Usage: Use the factory class to create and use objects.
+
 ```
 public class Main {
     public static void main(String[] args) {
@@ -287,7 +293,9 @@ public class Main {
         motorcycle.drive(); // Output: Driving a motorcycle...
     }
 }
+
 ```
+
 Breaking Down the Steps
 Identify the Need: Use the Factory Pattern when you need to create objects without specifying the exact class of object that will be created.
 
