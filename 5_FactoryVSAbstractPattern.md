@@ -30,6 +30,7 @@ public interface Vehicle {
 }
 ```
 // Step 2: Create the concrete classes
+
 ```
 public class Car implements Vehicle {
     public void drive() {
@@ -59,6 +60,7 @@ public class VehicleFactory {
 }
 ```
 // Step 4: Client code
+
 ```
 public class Main {
     public static void main(String[] args) {
@@ -70,6 +72,7 @@ public class Main {
     }
 }
 ```
+
 In this example, the VehicleFactory class encapsulates the object creation logic and provides a createVehicle() method to create the appropriate Vehicle object based on the input type. The client code uses the factory to create the desired Vehicle object without needing to know the specific implementation details.
 
 Abstract fractory pattern is Factory of Factory 
@@ -107,7 +110,9 @@ public interface VehicleEngine {
 }
 
 ```
+
 2. Concrete Implementations: Implement the abstract products.
+
 java
 ````
 public class Car implements Vehicle {
@@ -134,14 +139,20 @@ public class MotorcycleEngine implements VehicleEngine {
     }
 }
 ```
+
+
+
 3. Factory Interface: Define a factory interface to produce families of related objects.
+
 ```
 public interface VehicleFactory {
     Vehicle createVehicle();
     VehicleEngine createEngine();
 }
 ```
+
 4. Concrete Factories: Implement the factory interface in concrete factory classes.
+
 ```
 public class CarFactory implements VehicleFactory {
     public Vehicle createVehicle() {
@@ -161,6 +172,7 @@ public class MotorcycleFactory implements VehicleFactory {
     }
 }
 ```
+
 5. Client Usage: Use the factories in client code to create and use objects.
 
 ```
